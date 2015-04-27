@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="topleftcolor" type="color">#ffff0000</item>
+    <item name="topcentercolor" type="color">#ff00b2b2</item>
+    <item name="toprightcolor" type="color">#ff0000ff</item>
+    <item name="toprightmiddlecolor" type="color">#ff49311c</item>
+    <item name="belowtopabovemiddlecolor" type="color">#ffffffff</item>
+    <item name="middlecolor" type="color">#ffffff00</item>
+    <item name="bottomplacecolor" type="color">#ff008000</item>
+    <item name="bottomrightcolor" type="color">#ff49311c</item>
+</resources>

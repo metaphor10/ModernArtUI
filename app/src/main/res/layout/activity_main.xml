@@ -1,0 +1,124 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".MainActivity"
+
+    >
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toEndOf="@+id/seekbar"
+        android:background="@color/background_floating_material_dark"
+        android:id="@+id/one_view_to_bind_them_all"
+        >
+        <View
+            android:layout_width="100dip"
+            android:layout_height="200dip"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/topleft"
+            android:background="@color/topleftcolor"
+            >
+
+            </View>
+        <View
+            android:layout_width="150dip"
+            android:layout_height="300dip"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/topleft"
+            android:layout_toEndOf="@+id/topleft"
+            android:id="@+id/topcenter"
+            android:background="@color/topcentercolor"
+            >
+            
+
+            </View>
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="100dip"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/topcenter"
+            android:layout_toEndOf="@+id/topcenter"
+            android:background="@color/toprightcolor"
+            android:id="@+id/topright"
+            >
+
+
+            </View>
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="200dip"
+            android:background="@color/toprightmiddlecolor"
+            android:layout_below="@+id/topright"
+            android:layout_toRightOf="@id/topcenter"
+            android:id="@+id/toprightmiddle"
+            >
+            </View>
+        <View
+            android:layout_width="100dip"
+            android:layout_height="100dip"
+            android:layout_below="@+id/topleft"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_toEndOf="@id/topcenter"
+            android:layout_toRightOf="@+id/topcenter"
+            android:background="@color/belowtopabovemiddlecolor"
+            android:id="@+id/belowtopabovemddle"
+
+            >
+
+
+            </View>
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="100dip"
+            android:layout_below="@id/topcenter"
+            android:layout_toEndOf="@id/topcenter"
+            android:layout_toRightOf="@id/topcenter"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="@color/middlecolor"
+            android:id="@+id/middle"
+            > </View>
+        <View
+            android:layout_width="170dip"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/topcenter"
+            android:layout_toRightOf="@id/topcenter"
+            android:layout_below="@id/middle"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/bottomOfPlace"
+            android:background="@color/bottomplacecolor"
+            > </View>
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/bottomOfPlace"
+            android:layout_toRightOf="@id/bottomOfPlace"
+            android:layout_below="@id/middle"
+            android:background="@color/bottomrightcolor"
+            android:id="@+id/bottomright"
+            >
+
+        </View>
+
+
+        </RelativeLayout>
+    <SeekBar
+        android:id="@+id/seekbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+
+        />
+</RelativeLayout>
